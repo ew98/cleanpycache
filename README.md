@@ -1,6 +1,6 @@
 # CleanPycache
 
-**CleanPycache** is intended to be used as a CLI tool for clearing __pycache__ folders from a specified root path.
+**CleanPycache** is intended to be used as a CLI tool for clearing \_\_pycache\_\_ folders from a specified root path.
 
 ## Installation
 

@@ -29,7 +29,7 @@ def remove_pycache_paths(pycachePaths: list):
         else:
             print(f" {idx+1:>5}  --> {color.CYELLOW2}Warning: {color.CWHITE2}{item} {color.CRED2}is not recognized as {color.CWHITE2}__pycache__{color.CEND}!")
 
-    print(f"\n{color.CGREEN2}Finished removing {color.CWHITE2}{numRemoved__pycache__Folders}{color.CEND} paths!\n")
+    print(f"\n{color.CGREEN2}Finished removing {color.CWHITE2}{numRemoved__pycache__Folders}{color.CEND} __pycache__ paths!\n")
 
 # ------------------------------------------------------------------------------------------------------
 

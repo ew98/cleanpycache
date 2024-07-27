@@ -33,8 +33,7 @@ def cli():
                 help="absolute root path to start clearing")
 
         parser_runType = parser.add_argument(
-                'runtype',
-                nargs='?',
+                '-r', '--runtype',
                 choices=['native', 'shell'],
                 default='native',
                 metavar='<runtype>',
