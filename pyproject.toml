@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cleanpycache"
+description = "Multiple ways to clean __pycache__ folders recursively from a specified root path"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [{name = "Ed Waldner", email = "waldevburry@proton.me"},]
+maintainers = [{name = "Ed Waldner", email = "waldevburry@proton.me"},]
+# dynamic = ["version"]
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "argcomplete",
+    "quickcolor",
+    "delayviewer",
+    "showexception",
+]
+keywords = [
+    "util", "utility"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/ew98/cleanpycache"
+Documentation = "https://github.com/ew98/cleanpycache/wiki/CleanPycache"
+Issues = "https://github.com/ew98/cleanpycache/issues"
+
+[project.scripts]
+clean_pycache = "cleanpycache.cli:cli"
+
