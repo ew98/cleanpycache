@@ -25,18 +25,11 @@ def cli():
                     description=f'{"-." * 3}  {color.CBLUE2}Cleaning {color.CWHITE2}__pycache__{color.CYELLOW2} folders!{color.CEND}',
                     epilog='-.' * 40)
 
-        parser_runType = parser.add_argument(
-                'path',
-                nargs='?',
-                default=None,
-                metavar="<path>",
-                help="absolute root path to start clearing")
+        p_path = parser.add_argument('path', nargs='?', default=None,
+                metavar="<path>", help="absolute root path to start clearing")
 
-        parser_runType = parser.add_argument(
-                '-r', '--runtype',
-                choices=['native', 'shell'],
-                default='native',
-                metavar='<runtype>',
+        p_runType = parser.add_argument('-r', '--runtype', choices=['native', 'shell'],
+                default='native', metavar='<runtype>',
                 help="run type for clearing __pycache__ folders (shell cmds or native python)")
 
         argcomplete.autocomplete(parser)
