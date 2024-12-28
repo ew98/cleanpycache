@@ -34,7 +34,7 @@ def remove_pycache_paths(pycachePaths: list):
 # ------------------------------------------------------------------------------------------------------
 
 @handle_spinner
-def clean_pycache_shell(path: str | None = None, spinner = None):
+def clean_pycache_shell(path: str = None, spinner = None):
     if not path:
         path = os.getcwd()
 
@@ -60,7 +60,7 @@ def clean_pycache_shell(path: str | None = None, spinner = None):
 # ------------------------------------------------------------------------------------------------------
 
 @handle_spinner
-def clean_pycache_native(path: str | None = None, spinner = None):
+def clean_pycache_native(path: str = None, spinner = None):
     if not path:
         path = os.getcwd()
 

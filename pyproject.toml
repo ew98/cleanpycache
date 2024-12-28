@@ -9,7 +9,7 @@ readme = {file = "README.md", content-type = "text/markdown"}
 authors = [{name = "Ed Waldner", email = "waldevburry@proton.me"},]
 maintainers = [{name = "Ed Waldner", email = "waldevburry@proton.me"},]
 # dynamic = ["version"]
-version = "0.1.1"
+version = "0.1.2"
 requires-python = ">=3.9"
 dependencies = [
     "argcomplete",
